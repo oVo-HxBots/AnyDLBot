@@ -107,7 +107,7 @@ async def rename_doc(bot, update):
             thumb_image_path = Config.DOWNLOAD_LOCATION + "/" + str(update.from_user.id) + ".jpg"
             if not os.path.exists(thumb_image_path):
                 logger.info('setting thumb.jpg as thumbnail')
-                thumb_image_path = "https://telegra.ph/file/428f7a6c16db74d917c70.jpg"
+                thumb_image_path = "thumb.jpg"
             else:
                 width = 0
                 height = 0
