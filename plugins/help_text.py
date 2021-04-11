@@ -29,20 +29,6 @@ def GetExpiryDate(chat_id):
     expires_at = (str(chat_id), "Source Cloned User", "1970.01.01.12.00.00"
 
 
-
-@pyrogram.Client.on_message(pyrogram.filters.command(["help", "about"]))
-async def help_user(bot, update):
-    # logger.info(update)
-    TRChatBase(update.from_user.id, update.text, "/help")
-    await bot.send_message(
-        chat_id=update.chat.id,
-        text=Translation.HELP_USER,
-        parse_mode="html",
-        disable_web_page_preview=True,
-        reply_to_message_id=update.message_id
-    )
-
-
 @pyrogram.Client.on_message(pyrogram.filters.command(["me"]))
 async def get_me_info(bot, update):
     # logger.info(update)
@@ -57,6 +43,17 @@ async def get_me_info(bot, update):
         reply_to_message_id=update.message_id
     )
 
+@pyrogram.Client.on_message(pyrogram.filters.command(["help", "about"]))
+async def help_user(bot, update):
+    # logger.info(update)
+    TRChatBase(update.from_user.id, update.text, "/help")
+    await bot.send_message(
+        chat_id=update.chat.id,
+        text=Translation.HELP_USER,
+        parse_mode="html",
+        disable_web_page_preview=True,
+        reply_to_message_id=update.message_id
+    )
 
 @pyrogram.Client.on_message(pyrogram.filters.command(["start"]))
 async def start(bot, update):
