@@ -1,5 +1,5 @@
 class Translation(object):
-    START_TEXT = """Hi. <b>{}</b>\n\n Thank You for using me .\nIm a simple Telegram All-In-One Bot."""
+    START_TEXT = """Hi. {}\n🤠 Thank You for using me .\nIm a simple Telegram All-In-One Bot."""
     RENAME_403_ERR = "<b>Sorry. You Are Not Permitted To Rename This File.</b>"
     ABS_TEXT = " <b>Please Don't Be Selfish.</b>"
     UPGRADE_TEXT = "<b>This Bot Is Free To Use If U R My  Friend.</b>"
@@ -19,14 +19,14 @@ URL | filename | username | password</b>"""
     DEL_ETED_CUSTOM_THUMB_NAIL = "✅ <b>Custom thumbnail cleared succesfully."
     FF_MPEG_DEL_ETED_CUSTOM_MEDIA = "✅ Media Cleared Succesfully.</b>"
     SAVED_RECVD_DOC_FILE = "<b>Document Downloaded Successfully.</b>"
-    CUSTOM_CAPTION_UL_FILE = " <b>Bot Created By \n                                       👉 @HxBots</b>"
+    CUSTOM_CAPTION_UL_FILE = " <b>Bot Created By \n   👉 @HxBots</b>"
     NO_CUSTOM_THUMB_NAIL_FOUND = "<b>No Custom ThumbNail Found.</b>"
     NO_VOID_FORMAT_FOUND = "Can You Check The Url? <b>I Am Unable To Detect Video Format From UrL.</b> If You Think This Could Be A Bug Please Report On https://t.me/HxSupport"
     USER_ADDED_TO_DB = "User <a href='tg://user?id={}'>{}</a> added to {} till {}."
     CURENT_PLAN_DETAILS = """Current plan details
 --------
 Telegram ID: <code>{}</code>
-Plan name: 99GB Per Month
+Plan name: 75GB Per Month
 Expires on: 10/8/2021"""
     HELP_USER = """I can do some work
 --------
