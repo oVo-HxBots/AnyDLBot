@@ -100,7 +100,7 @@ async def gdrive_upload(bot, update):
             button.append([pyrogram.types.InlineKeyboardButton(text="ℹ️ IndexUrl ℹ️", url=f"{index_url}")])
         button_markup = pyrogram.types.InlineKeyboardMarkup(button)
         await bot.send_message(
-            text=f"🤖: <b>{up_name}</b> has been Uploaded successfully to your Cloud🤒 \n📀 Size: {size}",
+            text=f"🤖: <b>{up_name}</b> Has Been Uploaded Successfully To Your Cloud🤒 \n📀 Size: {size}",
             chat_id=update.chat.id,
             reply_to_message_id=update.message_id,
             reply_markup=button_markup)
