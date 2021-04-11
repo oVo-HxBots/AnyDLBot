@@ -27,15 +27,17 @@ URL | filename | username | password</b>"""
 --------
 Telegram ID: <code>{}</code>
 Plan name: 75GB Per Month
-Expires on: {} """
-    HELP_USER = """There Are Multiple Things I Can Do:\n <b>All Supported Video Formats of https://rg3.github.io/youtube-dl/supportedsites.html</b>
+Expires on: {} 
+--------"""
+    HELP_USER = """<b>There Are Multiple Things I Can Do:</b>\n\n <b>All Supported Video Formats of https://rg3.github.io/youtube-dl/supportedsites.html</b>
+
  <b>Upload as file from any HTTP link</b>
 
- <b>Convert To Streamable Video, any Telegram media./nReply /converttovideo to Any Doc File</b>
+ <b>Convert To Streamable Video, any Telegram media.\nReply /converttovideo to Any Doc File</b>
 
  <b>ReName Telegram files, with custom thumbnail support.\nReply /rename To File</b>
 
- <b>Get High Speed Direct Download Link Of Any Telegram File./nReply /getlink To File</b>
+ <b>Get High Speed Direct Download Link Of Any Telegram File.\nReply /getlink To File</b>
 --------
 
 Send /me To Know Your Current Plan Details"""
