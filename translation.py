@@ -27,7 +27,7 @@ URL | filename | username | password</b>"""
 --------
 Telegram ID: <code>{}</code>
 Plan name: 75GB Per Month
-Expires on: {} 
+Expires on: 10/12/2021
 --------"""
     HELP_USER = """<b>There Are Multiple Things I Can Do:</b>\n\n <b>All Supported Video Formats of https://rg3.github.io/youtube-dl/supportedsites.html</b>
 
