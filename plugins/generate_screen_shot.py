@@ -83,7 +83,7 @@ async def generate_screen_shot(bot, update):
             media_album_p = []
             if images is not None:
                 i = 0
-                caption = "© @Hx_AnyDLBot && @HxBots"
+                caption = "© @Hx_AnyDLBot"
                 for image in images:
                     if os.path.exists(image):
                         if i == 0:
