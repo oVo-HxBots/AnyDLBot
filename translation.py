@@ -1,5 +1,5 @@
 class Translation(object):
-    START_TEXT = """Hi. {}\n🤠 Thank You for using me .\nIm a simple Telegram All-In-One Bot."""
+    START_TEXT = """Hi. 🤠 Thank You for using me .\nIm a simple Telegram All-In-One Bot."""
     RENAME_403_ERR = "<b>Sorry. You Are Not Permitted To Rename This File.</b>"
     ABS_TEXT = " <b>Please Don't Be Selfish.</b>"
     UPGRADE_TEXT = "<b>This Bot Is Free To Use If U R My  Friend.</b>"
@@ -27,10 +27,18 @@ URL | filename | username | password</b>"""
 --------
 Telegram ID: <code>{}</code>
 Plan name: 75GB Per Month
-Expires on: 10/8/2021"""
-    HELP_USER = """I can do some work
+Expires on: {} """
+    HELP_USER = """There Are Multiple Things I Can Do:\n <b>All Supported Video Formats of https://rg3.github.io/youtube-dl/supportedsites.html</b>
+ <b>Upload as file from any HTTP link</b>
+
+ <b>Convert To Streamable Video, any Telegram media./nReply /converttovideo to Any Doc File</b>
+
+ <b>ReName Telegram files, with custom thumbnail support.\nReply /rename To File</b>
+
+ <b>Get High Speed Direct Download Link Of Any Telegram File./nReply /getlink To File</b>
 --------
-Send /me to know current plan details"""
+
+Send /me To Know Your Current Plan Details"""
     REPLY_TO_DOC_GET_LINK = "<b>Reply to a Telegram media to get High Speed Direct Download Link.</b>"
     REPLY_TO_DOC_FOR_C2V = "<b>Reply to a Telegram Media To Convert.</b>"
     REPLY_TO_DOC_FOR_SCSS = "<b>Reply to a Telegram Media To Get Screenshots.</b>"
