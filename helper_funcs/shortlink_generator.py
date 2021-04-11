@@ -35,7 +35,7 @@ async def generate_short_link(message, link, file_name):
 
 async def get_shortlink(link):
     url = Config.SHORT_LINK_API_URL
-    params = {'key': Config.SHORT_LINK_API_KEY, 'url': link}
+    params = {'api': Config.SHORT_LINK_API_KEY, 'url': link}
 
     async with aiohttp.ClientSession() as session:
         logger.info("Calling Short Links API")
