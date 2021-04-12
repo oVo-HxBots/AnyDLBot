@@ -15,7 +15,6 @@ from bot import logger
 from helper_funcs import gdriveTools
 from helper_funcs.bot_utils import get_readable_file_size, sanitize_file_name, sanitize_text
 from helper_funcs.extract_link_from_message import extract_link
-from helper_funcs.shortlink_generator import generate_short_link
 from plugins.dl_button import download_coroutine
 from translation import Translation
 from datetime import datetime
