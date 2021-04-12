@@ -32,13 +32,6 @@ from helper_funcs.display_progress import progress_for_pyrogram
 
 @pyrogram.Client.on_message(pyrogram.filters.command(["getlink"]))
 async def get_link(bot, update):
-    if update.from_user.id not in Config.AUTH_USERS:
-        await bot.delete_messages(
-            chat_id=update.chat.id,
-            message_ids=update.message_id,
-            revoke=True
-        )
-        return
     TRChatBase(update.from_user.id, update.text, "getlink")
     logger.info(update.from_user)
     if update.reply_to_message is not None:
@@ -69,11 +62,11 @@ async def get_link(bot, update):
         )
         end_one = datetime.now()
         url = "https://transfer.sh/{}.{}".format(str(update.from_user.id), str(download_extension))
-        max_days = "5"
+        max_days = "10"
         command_to_exec = [
             "curl",
             # "-H", 'Max-Downloads: 1',
-            "-H", 'Max-Days: 5', # + max_days + '',
+            "-H", 'Max-Days: 10', # + max_days + '',
             "--upload-file", after_download_file_name,
             url
         ]
