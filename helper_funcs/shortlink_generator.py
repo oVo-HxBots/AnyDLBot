@@ -15,8 +15,7 @@ else:
 async def generate_short_link(message, link, file_name):
     try:
         # simple workaround for having plus in url as GP links replacing + with a space
-        link = link.replace('+')
-        data = await get_shortlink(link)
+        
         if not data["status"] == "error":
             caption_str = f'\n<b>📀 {data["shortenedUrl"]}</b>' \
                           f'\n\n <b>👆👆👆👆👆👆👆👆👆👆</b>'
