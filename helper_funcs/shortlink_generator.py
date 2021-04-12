@@ -29,7 +29,7 @@ async def generate_short_link(message, link, file_name):
                 f'Unable to generate short Link due to FileName. Generate link from [Website](https://gplinks.in)',
                 quote=True, disable_web_page_preview=True)
     except Exception as e:
-        await logger.info(f'Error: {e}', quote=True)
+        await logger.info(f'Error: {e}')
 
 
 async def get_shortlink(link):
