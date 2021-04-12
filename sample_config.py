@@ -23,7 +23,7 @@ class Config(object):
     DEF_THUMB_NAIL_VID_S = ""
     # proxy for accessing youtube-dl in GeoRestricted Areas
     # Get your own proxy from https://github.com/rg3/youtube-dl/issues/1091#issuecomment-230163061
-    HTTP_PROXY = "140.238.228.223:3128"
+    HTTP_PROXY = ""
     # https://t.me/hevcbay/951
     OUO_IO_API_KEY = ""
     # maximum message length in Telegram
