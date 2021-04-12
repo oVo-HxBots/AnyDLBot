@@ -20,10 +20,10 @@ class Config(object):
     # chunk size that should be used with requests
     CHUNK_SIZE = int(os.environ.get("CHUNK_SIZE", 128))
     # default thumbnail to be used in the videos
-    DEF_THUMB_NAIL_VID_S = "https://telegra.ph/file/428f7a6c16db74d917c70.jpg"
+    DEF_THUMB_NAIL_VID_S = ""
     # proxy for accessing youtube-dl in GeoRestricted Areas
     # Get your own proxy from https://github.com/rg3/youtube-dl/issues/1091#issuecomment-230163061
-    HTTP_PROXY = os.environ.get("HTTP_PROXY", "")
+    HTTP_PROXY = "140.238.228.223:3128"
     # https://t.me/hevcbay/951
     OUO_IO_API_KEY = ""
     # maximum message length in Telegram
@@ -36,7 +36,7 @@ class Config(object):
     SHORT_LINK_API_KEY = os.environ.get("SHORT_LINK_API_KEY", "")
     IS_TEAM_DRIVE = os.environ.get("IS_TEAM_DRIVE", False)
     USE_SERVICE_ACCOUNTS = os.environ.get("USE_SERVICE_ACCOUNTS", False)
-    INDEX_URL = os.environ.get("INDEX_URL", "https://team.pnkreddy11.workers.dev/0:")
+    INDEX_URL = os.environ.get("INDEX_URL", "https://m.tortoolkit.workers.dev/0:")
     parent_id = os.environ.get("GDRIVE_FOLDER_ID","")
     STRIP_FILE_NAMES = os.environ.get("STRIP_FILE_NAMES","www.1TamilMV.life - |www.1TamilMV.life -|www.1TamilMV.org - |www.1TamilMV.org -|www.1TamilMV.xyz - |www.1TamilMV.xyz -|@telupalaka_ht|@telugu_moviez_|@telugu_moviez|@telugupalaka_ht_|@telugupalaka_ht|[MM].|[MM]|[MM] -|@telugu_dubbedmovies_|@telugu_dubbedmovies|@Moviez_India.|@Moviez_India_|@Moviez_India|www_Telugupalaka_com|@MM_New|@MM_Links|@MM_Linkz|www.TamilRockers.ws -|@Animationmovies|HT_BEATS_|-@lubokvideo|@lubokvideo|@english_movieschannel_|@english_movieschannel|@themovies_channel_|@themovies_channel|@telugu_bluray|@teluguoldmovies|[Movies Vip]|[CC].|[CC]|@CC_Links.|@CC_Links|@CC_x265.|@CC_x265|@CC.|@CC|@CC_ALL|@CPR_|@CPR|Moviez_India.|Moviez_India")
     CHANNEL_URL = "@HxBots\n@HxSupport"
