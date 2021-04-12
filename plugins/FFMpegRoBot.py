@@ -33,13 +33,6 @@ from hachoir.parser import createParser
 
 @pyrogram.Client.on_message(pyrogram.filters.command(["ffmpegrobot"]))
 async def ffmpegrobot_ad(bot, update):
-    if update.from_user.id not in Config.AUTH_USERS:
-        await bot.delete_messages(
-            chat_id=update.chat.id,
-            message_ids=update.message_id,
-            revoke=True
-        )
-        return
     TRChatBase(update.from_user.id, update.text, "ffmpegrobot")
     await bot.send_message(
         chat_id=update.chat.id,
@@ -51,13 +44,6 @@ async def ffmpegrobot_ad(bot, update):
 
 @pyrogram.Client.on_message(pyrogram.filters.command(["trim"]))
 async def trim(bot, update):
-    if update.from_user.id not in Config.AUTH_USERS:
-        await bot.delete_messages(
-            chat_id=update.chat.id,
-            message_ids=update.message_id,
-            revoke=True
-        )
-        return
     TRChatBase(update.from_user.id, update.text, "trim")
     saved_file_path = Config.DOWNLOAD_LOCATION + "/" + str(update.from_user.id) + ".FFMpegRoBot.mkv"
     if os.path.exists(saved_file_path):
@@ -167,13 +153,6 @@ async def trim(bot, update):
 
 @pyrogram.Client.on_message(pyrogram.filters.command(["storageinfo"]))
 async def storage_info(bot, update):
-    if update.from_user.id not in Config.AUTH_USERS:
-        await bot.delete_messages(
-            chat_id=update.chat.id,
-            message_ids=update.message_id,
-            revoke=True
-        )
-        return
     TRChatBase(update.from_user.id, update.text, "storageinfo")
     saved_file_path = Config.DOWNLOAD_LOCATION + "/" + str(update.from_user.id) + ".FFMpegRoBot.mkv"
     if os.path.exists(saved_file_path):
@@ -197,13 +176,6 @@ async def storage_info(bot, update):
 
 @pyrogram.Client.on_message(pyrogram.filters.command(["clearffmpegmedia"]))
 async def clear_media(bot, update):
-    if update.from_user.id not in Config.AUTH_USERS:
-        await bot.delete_messages(
-            chat_id=update.chat.id,
-            message_ids=update.message_id,
-            revoke=True
-        )
-        return
     TRChatBase(update.from_user.id, update.text, "clearffmpegmedia")
     saved_file_path = Config.DOWNLOAD_LOCATION + "/" + str(update.from_user.id) + ".FFMpegRoBot.mkv"
     if os.path.exists(saved_file_path):
@@ -217,13 +189,6 @@ async def clear_media(bot, update):
 
 @pyrogram.Client.on_message(pyrogram.filters.command(["downloadmedia"]))
 async def download_media(bot, update):
-    if update.from_user.id not in Config.AUTH_USERS:
-        await bot.delete_messages(
-            chat_id=update.chat.id,
-            message_ids=update.message_id,
-            revoke=True
-        )
-        return
     TRChatBase(update.from_user.id, update.text, "downloadmedia")
     saved_file_path = Config.DOWNLOAD_LOCATION + "/" + str(update.from_user.id) + ".FFMpegRoBot.mkv"
     if not os.path.exists(saved_file_path):
