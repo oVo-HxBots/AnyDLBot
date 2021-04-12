@@ -41,8 +41,8 @@ async def echo(bot, update):
     # )
     logger.info(update.from_user)
     url = update.text
-    youtube_dl_username = "sainianurag889@gmail.com"
-    youtube_dl_password = "kkraju00"
+    youtube_dl_username = None
+    youtube_dl_password = None
     file_name = None
     if "|" in url:
         url_parts = url.split("|")

@@ -79,7 +79,7 @@ async def ddl_call_back(bot, update):
     caption_str += custom_file_name
     caption_str += "</b>"
     if Config.CHANNEL_URL is not None:
-        caption_str += "\n\nJoin: "
+        caption_str += "\n\nJoin and Support: "
         caption_str += "<a href='"
         caption_str += f"{Config.CHANNEL_URL}"
         caption_str += "'>"
@@ -172,7 +172,7 @@ async def ddl_call_back(bot, update):
                 img.save(thumb_image_path, "JPEG")
                 # https://pillow.readthedocs.io/en/3.1.x/reference/Image.html#create-thumbnails
             else:
-                thumb_image_path = 'thumb.jpg'
+                thumb_image_path = 'moviez_trends.jpg'
             start_time = time.time()
             # try to upload file
             if tg_send_type == "audio":
