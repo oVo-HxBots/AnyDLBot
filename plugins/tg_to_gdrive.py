@@ -10,7 +10,6 @@ from bot import logger
 from helper_funcs import gdriveTools
 from helper_funcs.bot_utils import sanitize_file_name, sanitize_text, get_readable_file_size
 from helper_funcs.display_progress import progress_for_pyrogram
-from helper_funcs.shortlink_generator import generate_short_link
 from plugins.gdriveupload import get_path_size
 from translation import Translation
 from datetime import datetime
