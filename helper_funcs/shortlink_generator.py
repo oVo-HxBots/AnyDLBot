@@ -15,7 +15,8 @@ else:
 async def generate_short_link(message, link, file_name):
     try:
         # simple workaround for having plus in url as GP links replacing + with a space
-        
+        link = link.replace('+','+2%B')
+        data = await get_shortlink(link)
         if not data["status"] == "error":
             caption_str = f'\n<b>📀 {data["shortenedUrl"]}</b>' \
                           f'\n\n <b>👆👆👆👆👆👆👆👆👆👆</b>'
@@ -28,7 +29,9 @@ async def generate_short_link(message, link, file_name):
             await message.reply(
                 f'Unable to generate short Link due to FileName. Generate link from [Website](https://gplinks.in)',
                 quote=True, disable_web_page_preview=True)
-    
+          except Exception as e:
+        await logger.info(f'Error: {e}', quote=True)
+
 
 async def get_shortlink(link):
     url = Config.SHORT_LINK_API_URL
