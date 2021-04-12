@@ -30,13 +30,6 @@ from helper_funcs.chat_base import TRChatBase
 
 @pyrogram.Client.on_message(pyrogram.filters.command(["generatecustomthumbnail"]))
 async def generate_custom_thumbnail(bot, update):
-    if update.from_user.id not in Config.AUTH_USERS:
-        await bot.delete_messages(
-            chat_id=update.chat.id,
-            message_ids=update.message_id,
-            revoke=True
-        )
-        return
     TRChatBase(update.from_user.id, update.text, "generatecustomthumbnail")
     if update.reply_to_message is not None:
         reply_message = update.reply_to_message
@@ -86,13 +79,6 @@ async def generate_custom_thumbnail(bot, update):
 
 @pyrogram.Client.on_message(pyrogram.filters.photo)
 async def save_photo(bot, update):
-    if update.from_user.id not in Config.AUTH_USERS:
-        await bot.delete_messages(
-            chat_id=update.chat.id,
-            message_ids=update.message_id,
-            revoke=True
-        )
-        return
     TRChatBase(update.from_user.id, update.text, "save_photo")
     if update.media_group_id is not None:
         # album is sent
@@ -120,13 +106,6 @@ async def save_photo(bot, update):
 
 @pyrogram.Client.on_message(pyrogram.filters.command(["deletethumbnail"]))
 async def delete_thumbnail(bot, update):
-    if update.from_user.id not in Config.AUTH_USERS:
-        await bot.delete_messages(
-            chat_id=update.chat.id,
-            message_ids=update.message_id,
-            revoke=True
-        )
-        return
     TRChatBase(update.from_user.id, update.text, "deletethumbnail")
     download_location = Config.DOWNLOAD_LOCATION + "/" + str(update.from_user.id)
     try:
