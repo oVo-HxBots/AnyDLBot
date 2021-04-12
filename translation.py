@@ -44,6 +44,17 @@ Send /me To Know Your Current Plan Details"""
     REPLY_TO_DOC_GET_LINK = "<b>Reply to a Telegram media to get High Speed Direct Download Link.</b>"
     REPLY_TO_DOC_FOR_C2V = "<b>Reply to a Telegram Media To Convert.</b>"
     REPLY_TO_DOC_FOR_SCSS = "<b>Reply to a Telegram Media To Get Screenshots.</b>"
+    SOURCE = """<b>Hi!,</b>
+
+<b>○ My Name : <i>Hx AnyDLBot</i></b>
+<b>○ Creator : <a href='https://telegram.dog/Kirodewal'>This Person</a></b>
+<b>○ Credits : Everyone In This Journey</b>
+<b>○ Language : Python 3.9</b>
+<b>○ Library : Pyrogram Asyncio</b>
+<b>○ Cloned From : AnyDLBot [Spechide]</b>
+<b>○ Source Code :  <a href='https://t.me/HxSourceCode/2'>👉 Click Here</a></b>
+<b>○ Server : <a href='aws.amazon.com'>AWS Amazon</a></b>
+<b>○ Build Status : Beta v1</b>"""
     REPLY_TO_DOC_FOR_RENAME_FILE = "<b>Reply to a Telegram Media To /rename With Custom Thumbnail Support.</b>"
     AFTER_GET_DL_LINK = "Direct Link <a href='{}'>Generated</a> valid for {} days."
     FF_MPEG_RO_BOT_RE_SURRECT_ED = """Syntax: /trim HH:MM:SS [HH:MM:SS]"""
