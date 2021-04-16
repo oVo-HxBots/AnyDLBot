@@ -58,20 +58,26 @@ async def get_me_info(bot, update):
         reply_to_message_id=update.message_id
     )
 
-
 @pyrogram.Client.on_message(pyrogram.filters.command(["start"]))
-
 async def _start(c, m):
     await m.reply_chat_action("typing")
     
-async def start(bot, update):
-    # logger.info(update)
-    TRChatBase(update.from_user.id, update.text, "/start")
-    await bot.send_message(
-        chat_id=update.chat.id,
-        text=Translation.START_TEXT,
-        reply_to_message_id=update.message_id
-    )
+    await m.reply_text(
+        text=tr.START_MSG.format(m.from_user.first_name),
+        quote=True,
+        disable_web_page_preview=True,
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton("⭕How To Use Meh 😕", f"help+1")
+                ],
+                [
+                    InlineKeyboardButton("⭕Update Channel⭕", url="https://t.me/HxBots"),
+                    InlineKeyboardButton("⭕Support Group⭕", url="https://t.me/HxSupport")
+                ],
+            ]
+        )
+     )
 
 
 @pyrogram.Client.on_message(pyrogram.filters.command(["upgrade"]))
