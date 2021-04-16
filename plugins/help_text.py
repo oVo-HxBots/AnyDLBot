@@ -63,7 +63,7 @@ async def _start(c, m):
     await m.reply_chat_action("typing")
     
     await m.reply_text(
-        text=tr.START_MSG.format(m.from_user.first_name),
+        text=Translation.START_MSG.format(m.from_user.first_name),
         quote=True,
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
