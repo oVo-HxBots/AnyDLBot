@@ -64,7 +64,7 @@ async def _start(c, m):
     
     async def start(bot, update):
     # logger.info(update)
-    TRChatBase(update.from_user.id, update.text, "start")
+    TRChatBase(update.from_user.id, update.text)
     await m.reply_text(
         chat_id=update.chat.id,
         text=Translation.START_TEXT,
