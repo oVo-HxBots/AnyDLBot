@@ -1,3 +1,4 @@
+chatbase
 aiohttp
 beautifulsoup4
 hachoir
