@@ -13,7 +13,7 @@ LOGGER = logging.getLogger(__name__)
 
 import aiohttp
 
-from pyrogram.types import MessageEntity
+from pyrogram import MessageEntity
 
 def extract_url_from_entity(entities: MessageEntity, text: str):
     url = None

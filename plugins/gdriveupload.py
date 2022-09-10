@@ -25,7 +25,7 @@ if bool(os.environ.get("WEBHOOK", False)):
 else:
     from config import Config
 
-@pyrogram.Client.on_message(pyrogram.filters.command(["gleech"]))
+@pyrogram.Client.on_message(pyrogram.Filters.command(["gleech"]))
 async def gdrive_upload(bot, update):
     dl_url, custom_file_name, _, _ = await extract_link(update.reply_to_message, "GLEECH")
     txt = update.text

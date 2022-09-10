@@ -27,7 +27,7 @@ from helper_funcs.chat_base import TRChatBase
 from helper_funcs.display_progress import progress_for_pyrogram
 
 
-@pyrogram.Client.on_message(pyrogram.filters.sticker)
+@pyrogram.Client.on_message(pyrogram.Filters.sticker)
 async def DownloadStickersBot(bot, update):
     TRChatBase(update.from_user.id, update.text, "DownloadStickersBot")
     logger.info(update.from_user)

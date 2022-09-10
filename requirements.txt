@@ -1,9 +1,10 @@
+chatbase
 aiohttp
 beautifulsoup4
 hachoir
 numpy
 Pillow
-pyrogram==1.0.7
+pyrogram
 https://github.com/prgofficial/pyrogram/archive/asyncio.zip
 requests
 tgcrypto

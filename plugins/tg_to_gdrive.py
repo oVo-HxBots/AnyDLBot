@@ -19,7 +19,7 @@ if bool(os.environ.get("WEBHOOK", False)):
 else:
     from config import Config
 
-@pyrogram.Client.on_message(pyrogram.filters.command(["tleech"]))
+@pyrogram.Client.on_message(pyrogram.Filters.command(["tleech"]))
 async def tg_to_gdrive_upload(bot, update):
     download_location = Config.DOWNLOAD_LOCATION + "/"
     reply_message = await bot.send_message(
@@ -71,13 +71,14 @@ async def tg_to_gdrive_upload(bot, update):
             pass
         logger.info(f"Upload Name : {up_name}")
         drive = gdriveTools.GoogleDriveHelper(up_name)
-        gd_url, index_url = drive.upload(download_directory)
+        gd_url = drive.upload.file_name
+        index_url = drive.upload(download_directory)
         button = []
-        button.append([pyrogram.types.InlineKeyboardButton(text="☁️ CloudUrl ☁️", url=f"{gd_url}")])
+        button.append([pyrogram.InlineKeyboardButton(text="☁️ CloudUrl ☁️", url=f"{gd_url}")])
         if Config.INDEX_URL:
             logger.info(index_url)
-            button.append([pyrogram.types.InlineKeyboardButton(text="ℹ️ IndexUrl ℹ️", url=f"{index_url}")])
-        button_markup = pyrogram.types.InlineKeyboardMarkup(button)
+            button.append([pyrogram.InlineKeyboardButton(text="ℹ️ IndexUrl ℹ️", url=f"{index_url}")])
+        button_markup = pyrogram.InlineKeyboardMarkup(button)
         await bot.send_message(
             text=f"🤖: <b>{up_name}</b> has been Uploaded successfully to your Cloud🤒 \n📀 Size: {size}",
             chat_id=update.chat.id,
