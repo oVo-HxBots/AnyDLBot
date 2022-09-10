@@ -34,7 +34,7 @@ from hachoir.parser import createParser
 from PIL import Image
 
 
-@pyrogram.Client.on_message(pyrogram.filters.command(["converttovideo"]))
+@pyrogram.Client.on_message(pyrogram.Filters.command(["converttovideo"]))
 async def convert_to_video(bot, update):
     TRChatBase(update.from_user.id, update.text, "converttovideo")
     if update.reply_to_message is not None:
