@@ -71,7 +71,7 @@ async def tg_to_gdrive_upload(bot, update):
             pass
         logger.info(f"Upload Name : {up_name}")
         drive = gdriveTools.GoogleDriveHelper(up_name)
-        gd_url = gdriveTools.upload(file_path)
+        gd_url = drive.upload(file_path)
         index_url = drive.upload(download_directory)
         button = []
         button.append([pyrogram.InlineKeyboardButton(text="☁️ CloudUrl ☁️", url=f"{gd_url}")])
