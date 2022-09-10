@@ -1,4 +1,4 @@
-git+git://github.com/google/chatbase-python.git
+git+git://github.com/RachelSaini/chatbase-python.git
 aiohttp
 beautifulsoup4
 hachoir
