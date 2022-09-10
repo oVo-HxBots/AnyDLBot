@@ -1,4 +1,4 @@
-chatbase
+chatbase==0.1
 aiohttp
 beautifulsoup4
 hachoir
