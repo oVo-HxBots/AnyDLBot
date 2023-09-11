@@ -19,7 +19,7 @@ else:
 
 # the Strings used for this "thing"
 from translation import Translation
-from pyrogram import Filters as filters
+
 import pyrogram
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
@@ -31,7 +31,7 @@ from hachoir.metadata import extractMetadata
 from hachoir.parser import createParser
 
 
-@pyrogram.Client.on_message(pyrogram.Filters.command(["ffmpegrobot"]))
+@pyrogram.Client.on_message(pyrogram.filters.command(["ffmpegrobot"]))
 async def ffmpegrobot_ad(bot, update):
     TRChatBase(update.from_user.id, update.text, "ffmpegrobot")
     await bot.send_message(
@@ -42,7 +42,7 @@ async def ffmpegrobot_ad(bot, update):
     )
 
 
-@pyrogram.Client.on_message(pyrogram.Filters.command(["trim"]))
+@pyrogram.Client.on_message(pyrogram.filters.command(["trim"]))
 async def trim(bot, update):
     TRChatBase(update.from_user.id, update.text, "trim")
     saved_file_path = Config.DOWNLOAD_LOCATION + "/" + str(update.from_user.id) + ".FFMpegRoBot.mkv"
