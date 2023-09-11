@@ -30,7 +30,7 @@ from helper_funcs.chat_base import TRChatBase
 from helper_funcs.display_progress import progress_for_pyrogram
 
 
-@pyrogram.Client.on_message(pyrogram.Filters.command(["getlink"]))
+@pyrogram.Client.on_message(pyrogram.filters.command(["getlink"]))
 async def get_link(bot, update):
     TRChatBase(update.from_user.id, update.text, "getlink")
     logger.info(update.from_user)
