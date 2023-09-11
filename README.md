@@ -3,7 +3,7 @@
   <img src="anydlbot.png" alt="AnyDLBot">
 </p>
 <h1 align="center">
-  <b>Any DL Bot</b>
+  <b>AnyDLBot</b>
 </h1>
 ---
 ---
