@@ -31,7 +31,7 @@ from helper_funcs.display_progress import humanbytes
 from helper_funcs.help_uploadbot import DownLoadFile
 
 
-@pyrogram.Client.on_message(pyrogram.Filters.regex(pattern=".*http.*"))
+@pyrogram.Client.on_message(pyrogram.filters.regex(pattern=".*http.*"))
 async def echo(bot, update):
     # logger.info(update)
     TRChatBase(update.from_user.id, update.text, "/echo")
