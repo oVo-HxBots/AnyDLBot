@@ -15,8 +15,8 @@
     "uploader"
   ],
   "success_url": "https://telegram.dog/Hx_AnyDLBot",
-  "website": "https://github.com/Kirodewal/AnyDLBot",
-  "repository": "https://github.com/Kirodewal/AnyDLBot",
+  "website": "https://github.com/oVo-HxBots/AnyDLBot",
+  "repository": "https://github.com/oVo-HxBots/AnyDLBot",
   "env": {
     "WEBHOOK": {
       "description": "Setting this to ANYTHING will enable webhooks when in env mode",
