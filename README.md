@@ -3,16 +3,11 @@
 
 An Open Source ALL-In-One Telegram RoBot, that can do lot of things.
 
-## Credits, and Thanks to
-
-* [Dan Tès](https://telegram.dog/haskell) for his [Pyrogram Library](https://github.com/pyrogram/pyrogram)
-* [Yoily](https://telegram.dog/YoilyL) for his [UploaditBot](https://telegram.dog/UploaditBot)
-
 ### Installation
 
 #### The Easy Way
 
-[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?)
 
 #### The Hard Way
 
@@ -64,5 +59,10 @@ generatescss - Get Screenshot of Telegram Media
 
 - For FeedBack and Suggestions, please feel free to say in [@HxSupport](https://telegram.dog/HxSupport)
 
+## Credits, and Thanks to
+
+* [Dan Tès](https://telegram.dog/haskell) for his [Pyrogram Library](https://github.com/pyrogram/pyrogram)
+* [Yoily](https://telegram.dog/YoilyL) for his [UploaditBot](https://telegram.dog/UploaditBot)
+  
 #### LICENSE
 - GPLv3
