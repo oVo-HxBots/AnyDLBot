@@ -19,7 +19,7 @@ if bool(os.environ.get("WEBHOOK", False)):
 else:
     from config import Config
 
-@pyrogram.Client.on_message(pyrogram.Filters.command(["tleech"]))
+@pyrogram.Client.on_message(pyrogram.filters.command(["tleech"]))
 async def tg_to_gdrive_upload(bot, update):
     download_location = Config.DOWNLOAD_LOCATION + "/"
     reply_message = await bot.send_message(
